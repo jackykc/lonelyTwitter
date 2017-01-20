@@ -25,17 +25,18 @@ public abstract class Mood {
     /**
      * Methods
      */
+
+    // gets the date
     public Date getDate() {
         return date;
     }
 
+    // sets the date
     public void setDate(Date date) {
         this.date = date;
     }
 
+    // abstract method to be implemented by subclasses
     public abstract String myMood();
 
-//    public String myMood(){
-//        return "default";
-//    }
 }
