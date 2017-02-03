@@ -5,14 +5,16 @@ import java.util.Date;
 /**
  * Created by jkc1 on 2017-01-20.
  */
-
 public class sad extends Mood {
 
     public sad(Date date) {
         super(date);
     }
 
-    // returns "I am sad for a sad mood subclass"
+    /**
+     * @return "I am sad for a sad mood subclass"
+     */
+
     @Override
     public String myMood(){
         return "I am sad";
