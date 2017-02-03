@@ -5,6 +5,11 @@ import java.util.Date;
 /**
  * Created by jkc1 on 2017-01-20.
  */
+
+/**
+ * Important tweet is a subclass of tweet
+ */
+
 public class ImportantTweet extends Tweet {
     /**
      * Instantiates a new Important tweet.

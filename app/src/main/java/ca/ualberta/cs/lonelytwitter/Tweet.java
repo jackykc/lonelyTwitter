@@ -8,6 +8,10 @@ import java.util.concurrent.ExecutionException;
 /**
  * Created by jkc1 on 2017-01-20.
  */
+
+/**
+ * Tweet is a superclass that represents a tweet
+ * */
 public abstract class Tweet implements Tweetable{
 
     private Date date;

@@ -5,6 +5,11 @@ import java.util.Date;
 /**
  * Created by jkc1 on 2017-01-20.
  */
+
+/**
+ * Super class mood
+ */
+
 public abstract class Mood {
 
     private Date date;

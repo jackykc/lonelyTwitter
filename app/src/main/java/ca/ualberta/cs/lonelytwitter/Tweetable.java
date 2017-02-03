@@ -3,6 +3,10 @@ package ca.ualberta.cs.lonelytwitter;
 /**
  * Created by jkc1 on 2017-01-20.
  */
+
+/**
+ * Interface used by the Tweet class
+ * */
 public interface Tweetable {
     /**
      * Gets message.

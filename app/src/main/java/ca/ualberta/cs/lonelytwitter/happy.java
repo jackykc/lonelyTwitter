@@ -5,6 +5,10 @@ import java.util.Date;
 /**
  * Created by jkc1 on 2017-01-20.
  */
+
+/**
+ * Happy is a subclass of mood, implement method myMood
+ * */
 public class happy extends Mood {
 
     /**
