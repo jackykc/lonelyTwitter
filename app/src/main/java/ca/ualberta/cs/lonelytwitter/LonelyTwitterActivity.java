@@ -71,10 +71,11 @@ public class LonelyTwitterActivity extends Activity {
 				} catch (Exception e) {
 					Log.i("Error", "Failed to get the tweet out of async object");
 				}
-				System.out.println(tweetList.size());
-//				setResult(RESULT_OK);
-//				tweetList.clear();
-//				deleteFile(FILENAME);  // TODO deprecate this button
+
+				adapter = new ArrayAdapter<NormalTweet>(LonelyTwitterActivity.this,
+						R.layout.list_item, tweetList);
+				oldTweetsList.setAdapter(adapter);
+
 				adapter.notifyDataSetChanged();
 			}
 		});

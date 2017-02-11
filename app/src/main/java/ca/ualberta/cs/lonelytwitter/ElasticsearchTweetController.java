@@ -63,19 +63,7 @@ public class ElasticsearchTweetController {
                     "    }\n" +
                     " } ";
 
-//            String query = "{\n" +
-//                    //"    \"id\": \"myTemplateId\"," +
-//                    "       \"params\": {\n" +
-//                    //"           \"query_string\" : \"" + search_parameters[0] +
-//                    "           \"term\" : { \"message\" : \""+search_parameters[0] +"\" }\n" +
-//                    "\" " +
-//                    "    }\n" +
-//                    "}";
-
-//          String query = "" + search_parameters[0];
-            //query = "";
-                // TODO Build the query
-            System.out.println(query);
+           // TODO Build the query
             Search search = new Search.Builder(query)
                     .addIndex("testing")
                     .addType("tweet")
