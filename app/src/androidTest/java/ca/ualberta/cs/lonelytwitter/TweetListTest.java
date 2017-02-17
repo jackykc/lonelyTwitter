@@ -25,13 +25,6 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
 
     }
 
-    public void testHasTweet() {
-        TweetList tweets = new TweetList();
-        NormalTweet tweet = new NormalTweet("some tweet");
-        assertFalse(tweets.hasTweet(tweet));
-        tweets.addTweet(tweet);
-        assertTrue(tweets.hasTweet(tweet));
-    }
 
     public void testGetTweet() {
         TweetList tweets = new TweetList();
@@ -62,8 +55,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
     }
 
 
-
+    // tests for duplication
     public void testDuplicateException() {
+
         TweetList tweets = new TweetList();
         NormalTweet tweet = new NormalTweet("some tweet");
 
@@ -77,6 +71,7 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         }
     }
 
+    // tests if the tweetlist is chronological
     public void testChronological() {
 
         TweetList tweets = new TweetList();
@@ -95,6 +90,16 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
     }
 
 
+    // tests if the tweet exists in the tweetlist
+    public void testHasTweet() {
+        TweetList tweets = new TweetList();
+        NormalTweet tweet = new NormalTweet("some tweet");
+        assertFalse(tweets.hasTweet(tweet));
+        tweets.addTweet(tweet);
+        assertTrue(tweets.hasTweet(tweet));
+    }
+
+    // test if the tweetlist has the correct count
     public void testGetCount() {
 
         TweetList tweets = new TweetList();

@@ -10,6 +10,7 @@ public class TweetList {
 
     private ArrayList<NormalTweet> tweets =  new ArrayList<NormalTweet>();
 
+    // adds tweet to tweets. throws exception on attempt to add duplicate tweet
     public void addTweet(NormalTweet tweet) {
         if (tweets.contains(tweet)) {
             throw new IllegalArgumentException();
@@ -19,10 +20,12 @@ public class TweetList {
 
     }
 
+    // gets the count
     public int getCount() {
         return tweets.size();
     }
 
+    // returns the tweetlist
     public ArrayList<NormalTweet> getTweets() {
         return tweets;
     }
