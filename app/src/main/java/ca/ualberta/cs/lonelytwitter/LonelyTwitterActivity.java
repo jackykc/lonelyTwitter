@@ -102,6 +102,7 @@ public class LonelyTwitterActivity extends Activity {
 				String text = bodyText.getText().toString();
 				text = trimExtraSpaces(text);
 				Tweet tweet = new NormalTweet(text);
+				System.out.println(tweet.getDate().toString());
 
                 tweetList.add(tweet);
 

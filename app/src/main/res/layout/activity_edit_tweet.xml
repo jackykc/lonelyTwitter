@@ -16,7 +16,7 @@
     tools:context="ca.ualberta.cs.lonelytwitter.EditTweetActivity">
 
     <TextView
-        android:text="TextView"
+        android:text="placeholder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

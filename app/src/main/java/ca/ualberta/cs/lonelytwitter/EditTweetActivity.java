@@ -39,6 +39,14 @@ public class EditTweetActivity extends Activity {
     TextView messageText;
     TextView dateText;
 
+
+    public TextView getTweetMessage() {
+        return messageText;
+    }
+    public TextView getTweetDate() {
+        return dateText;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,13 +66,12 @@ public class EditTweetActivity extends Activity {
         // TODO Auto-generated method stub
         super.onStart();
         loadFromFile();
-        System.out.println(current.getMessage());
         String message = current.getMessage();
         Date tweetDate = current.getDate();
         messageText.setText(message);
         dateText.setText(tweetDate.toString());
 
-        System.out.println(current.getMessage());
+        System.out.println(messageText.getText());
 
     }
 

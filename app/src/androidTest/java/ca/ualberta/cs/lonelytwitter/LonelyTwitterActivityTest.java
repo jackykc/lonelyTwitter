@@ -4,10 +4,13 @@ import android.app.Activity;
 import android.test.ActivityInstrumentationTestCase2;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.robotium.solo.Solo;
 
 import junit.framework.TestCase;
+
+import org.w3c.dom.Text;
 
 /**
  * Created by wz on 14/09/15.
@@ -61,7 +64,17 @@ public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2 
 
         solo.clickInList(0);
         solo.assertCurrentActivity("Wrong Activity", EditTweetActivity.class);
-        assertTrue(solo.waitForText("TextView"));
+
+        // lab 7 here
+        // test if the tweet message being displayed in EditTweetActivity is the
+        // same as the message in the tweet
+        EditTweetActivity editActivity = (EditTweetActivity)solo.getCurrentActivity();
+        solo.waitForText("TestTweet");
+
+        final TextView tweetMessage = editActivity.getTweetMessage();
+        final TextView tweetDate = editActivity.getTweetDate();
+        assertEquals("TestTweet", tweetMessage.getText());
+        assertEquals(tweet.getDate().toString(), tweetDate.getText().toString());
 
         solo.goBack();
         solo.assertCurrentActivity("Wrong Activity", LonelyTwitterActivity.class);
