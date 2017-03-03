@@ -1,0 +1,11 @@
+<!--
+  ~ Copyright (c) 2017. Team A CMPUT 301 University of Alberta. All Rights Reserved. You may use, distribute, or modify this code under terms and conditions of Code of Student Behaviour at University of Alberta.
+  ~ You can find a copy of this liscense in this project, otherwise contact via email
+  -->
+
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+</resources>
